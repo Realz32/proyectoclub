@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.divisor{
+    height: 13px;
+    background-color: yellow;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: cyan;
+}
+
+.header__logo{
+    max-width: 100%;
+}
+
+.header__list{
+    list-style: none;
+    display: flex;
+
+}
+
+
+.header__link{
+    margin: 20px 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color:yellowgreen
+}
+
+
+.hero{
+    height: 60vh;
+    background-image: url(../imgvideo/foto.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    right: 50px;
+    left: 80px;
+    padding: 20px 40px;
+}
+
+.hero__contenedor{
+    width: 350px;
+    position: relative;
+}
+
+.hero__logo{
+    width: 100%;
+    left: 18px;
+}
+
+.hero__titulo{
+    width: 240px;
+    color:darkslategray;
+
+}
+
+.complementoMain{
+    display: flex;
+    background-color: green;
+    padding: 20px 40px;
+    gap: 50px;
+    align-items: center;
+    
+
+}
+
+
+.complementoMain__video{
+    width: 800px;
+}
+
+
+
+.autoridades{
+    display: flex; 
+    background-color: cyan;
+    
+}
+
+.equipo__miembro{
+    display: flex;
+    align-items: center;
+    margin: 10px 50px
+    
+}
+
+.equipo__titulo{
+    align-items: center;
+    margin: 10px 50px;
+}
+
+.equipo__parrafo{
+    margin: 10px 50px;
+}
+
+.footer{
+    left: 120px;
+}
+
+.footerredes__instagram{
+    width: 120px;
+}
+
+.footerredes__facebook{
+    width: 120px;
+}
+
+.ubicacion{
+    left: 120px;
+}
