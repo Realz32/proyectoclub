@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+
+.todo{  
+    display: grid;
+    margin: auto;
+}
+
 .divisor{
     height: 13px;
     background-color: yellow;
@@ -12,22 +18,27 @@
 .header{
     display: flex;
     align-items: center;
-    padding: 20px 10px;
-    justify-content: space-between;
-    flex-wrap: wrap;
     background-color: cyan;
+    grid-template-areas: none;
+    justify-content: space-between;
+    padding: 25px 15px;
+    flex-wrap: wrap;
 }
 
 .header__logo{
     max-width: 100%;
 }
 
-.header__list{
-    list-style: none;
-    display: flex;
 
+.header__list{   
+    display: flex;
+    list-style: none;
+    background-color: brown;
 }
 
+.header__section{
+    margin: 0px 2rem;
+}
 
 .header__link{
     margin: 20px 10px;
@@ -36,76 +47,104 @@
     color:yellowgreen
 }
 
+.main{
+    overflow: hidden;
+}
 
 .hero{
-    height: 60vh;
-    background-image: url(../imgvideo/foto.png);
-    background-position: right;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    right: 50px;
-    left: 80px;
-    padding: 20px 40px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    grid-template-columns: repeat(2, 1fr);
+    height: 55vh;
+    background-color:gold;
 }
 
 .hero__contenedor{
-    width: 350px;
+    width: 50vh;
     position: relative;
+    background-color: darkgoldenrod;
+    padding: 25px 20px;
 }
+
 
 .hero__logo{
     width: 100%;
-    left: 18px;
+    align-items: center;
 }
 
 .hero__titulo{
-    width: 240px;
     color:darkslategray;
-
+    font-size: x-large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 
 .complementoMain{
     display: flex;
     background-color: green;
     padding: 20px 40px;
     gap: 50px;
-    align-items: center;
-    
+    align-items: center;    
 
 }
 
 
 .complementoMain__video{
-    width: 800px;
-}
+    width: 400px;
 
+}
 
 
 .autoridades{
-    display: flex; 
+    display:flex;
     background-color: cyan;
-    
+    flex-direction:column;
+    overflow: hidden;
+
 }
 
-.equipo__miembro{
+.autoridades__equipo{
     display: flex;
-    align-items: center;
-    margin: 10px 50px
+    flex-direction: row;
+    padding: 30px 55px;
+}
+
+.autoridades__puesto{
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.8;
+
+}
+
+.autoridad__img{
+    width: 100%;
+    border-radius: 50%;
+    max-width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin: auto;
     
 }
 
-.equipo__titulo{
+
+.autoridad__titulo{
     align-items: center;
     margin: 10px 50px;
 }
 
-.equipo__parrafo{
+.autoridad__parrafo{
     margin: 10px 50px;
 }
 
 .footer{
-    left: 120px;
+    display:flex;   
+    background-color: chartreuse;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
 }
 
 .footerredes__instagram{
@@ -118,4 +157,97 @@
 
 .ubicacion{
     left: 120px;
+}
+
+.titulo__proyecto{
+    display: flex;
+    background-color: goldenrod;
+    font-size:45px;
+    justify-content: center;
+}
+
+.parrafo__proyecto{
+    display: flex;
+    background-color: goldenrod;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+}
+
+.texto__actividades{
+    background-color: goldenrod;
+    font-size: 20px;
+
+}
+
+.titulo__contacto{
+    font-size: 35px;
+    background-color: goldenrod;
+}
+
+.informacion__personal{
+    font-size: 20px;
+}
+
+.titulo__galeria{
+    display: flex;
+    justify-content: center;
+    background-color: goldenrod;
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer, .complementoMain__contenedor, .autoridades__equipo, .complementoMain {
+    flex-direction: column;
+}
+
+.complementoMain__contenedor, .autoridades__equipo, .complementoMain{
+    padding: 10px 20px;
+}
+
+.hero__titulo {
+   font-size: 2.5rem;
+}
+
+.hero__contenedor {
+    color: purple;
+    padding: 0px;
+    left: 10px;
+    top: 0px; 
+}
+
+.hero{
+    grid-template-columns: 1fr;
+}
+
+}
+
+
+@media screen and (max-width: 425px) {
+    .hero__contenedor{
+        order: 1; 
+        align-self: start;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .hero__foto{
+        order: -1; 
+    }
+
+    .equipo{
+        background-color:white;
+        color:purple; 
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background-image: url("../img/section-2.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    
 }
