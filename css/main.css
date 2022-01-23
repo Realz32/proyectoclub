@@ -111,7 +111,9 @@
 
 .main__actividades .texto__actividades {
   background-color: goldenrod;
-  font-size: 20px; }
+  font-size: 20px; 
+ 
+}
 
 .titulo__contacto {
   font-size: 35px;
@@ -163,3 +165,30 @@
     background-image: url("../img/section-2.png");
     background-repeat: no-repeat;
     background-position: center; } }
+
+    table {
+      width: 100%;
+      border: 2px;
+      background-color:goldenrod;
+   }
+   th, td {
+      width: 10%;
+      text-align: left;
+      vertical-align: top;
+      border: 2px solid #000;
+   }
+
+   table {
+    width: 100%;
+    border: 2px;
+    background-color:goldenrod;
+ }
+ th, td {
+    width: 10%;
+    text-align: left;
+    vertical-align: top;
+    border: 2px solid #000;
+ }
+
+ 
+ 
