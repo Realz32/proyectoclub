@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Club 25 de Mayo</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../scss/main.css">
 </head>
 <body>
     <div class="todo">
@@ -26,14 +26,55 @@
         </nav>   
     </header>     
     <main class="main__actividades">
-        <div class="texto__actividades"><h1>Nuestras actividades</h1></div>
-        <ul>
-            <li>Tenis de mesa</li>
-            <li>Gimnasia Artistica</li>
-            <li>Natacion</li>
-            <li>Taekwon-Do</li>
-        </ul>
-    </main> 
+        <div class="texto__actividades"><h1>Nuestras actividades y horarios</h1></div>
+        <table class="tabla__actividades">
+            <tr>
+                <th>Actividades / Dias</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                <th>Sabado</th>
+                <th>Domingo</th>
+            </tr>         
+            <tr>
+                <th>Futbol</th>
+                <th>-</th>
+                <th>De 16:00 hs a 19:00 hs</th>
+                <th>-</th>
+                <th>De 16:00 hs a 19:00 hs</th>
+                <th>-</th>
+                <th>De 10:00 hs a 13:00 hs</th>
+                <th>-</th>
+            </tr>          
+            <tr>
+               <th>Gimnasia Artistica</th>
+               <th>-</th>
+               <th>De 17:00 hs a 20:00 hs</th>
+               <th>-</th>
+               <th>De 17:00 hs a 20:00 hs</th>
+               <th>-</th>
+               <th>De 10:00 hs a 13:00 hs</th>
+               <th>-</th>
+            </tr>         
+            <tr>
+                <th>Tenis de Mesa</th>
+                <th>De 20:00 hs a 22:00 hs</th>
+                <th>De 19:00 hs a 21:00 hs</th>
+                <th>De 20:00 hs a 22:00 hs</th>
+                <th>De 19:00 hs a 21:00 hs</th>
+                <th>De 20:00 hs a 22:00 hs</th>
+                <th>De 16:00 hs a 18:00 hs</th>
+                <th>-</th>
+            </tr>          
+          </table>
+
+          <p class="texto__actividades">
+            No dudes en acercarte a la secretaria en los horarios de 08:00 a 12:00 y de 15:00 a 20:00 y consutar los aranceles de las actividades.
+        </p> 
+        </main> 
+
 <footer class="footer">
     <div class="footer__titulo">
         <h3>Nuestras redes sociales</h3>
