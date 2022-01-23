@@ -1,0 +1,26 @@
+{
+  "name": "proyectofinaltrabajoconeste",
+  "version": "1.0.0",
+  "description": "PaqueteNuevo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Realz32/proyectoclub.git"
+  },
+  "author": "Javier Celiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Realz32/proyectoclub/issues"
+  },
+  "homepage": "https://github.com/Realz32/proyectoclub#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
